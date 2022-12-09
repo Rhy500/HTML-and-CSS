@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lean with html and css </title>
 </head>
-<body style="background-color:whitesmoke"></body>
-<body>
+<body style="background-color:whitesmoke">
+
     <a href="https://www.instagram.com/invites/contact/?i=soxr6e1lsish&utm_content=jeylbgb">my id instagram</a>
               <!--for add link-->
 
 <h1 style="text-align: center ; font-family: 'Courier New', Courier, monospace;"> Hello this my text!</h1>
     <p style="font-size: 10px ; text-align: right ;">By;fbrynt Rhy</p> <!--for id my text-->
 
-<hr style="widht= 40px ";  height="50px" ; color="gold" ; />
-<hr> <!--2 type rules -->
-<hr style="widht= 40px ";  height="50px" ; color="gold" ; />
+<hr style="width: 40px " ;height="50px" ;color="gold" ;/>
+<hr/> <!--2 type rules -->
+<hr style="width: 40px ";height="50px" ;color="gold" ;/>
 
 <P><i>I Love HTML and CSS because it's complete Me!</i></br>
 HTML</br><!--br is line break-->
@@ -82,7 +82,7 @@ CSS</br>
 
              <li><i>email</i></li>
              <form action="emailpage">
-              <input type="email" id="demo" name="febriyanti73700@gmail.com" />
+              <input type="email" id="demo" name="email" />
               <input type="submit" />
             </form>
              <br />
@@ -94,9 +94,180 @@ CSS</br>
                  }
                  </script><br/>
 
-</ui>
 
-</p>
+
+                      <li><i>file</i></li>
+                      <input type="file" id="demo" onchange="readFile();" />
+                      <img scr="" alt="image file." id="result" />
+             
+                     <script type="text/javascript">
+                         funtion readfile( ) {
+                            var read =new FileRead();
+                            var file = document.getElementById('demo') .file[0];
+
+                            reader.onload = function(e) {
+                                document.getElementByid('result').scr = e.target.result;
+                            }
+                    
+                         reader.fileAsDataURL(file);
+                        }
+                     </script>
+
+
+                      <li><i>hidden</i></li>
+                      <input type="hidden"  value="lorem input" id="demo" />
+                      <br/>
+                      <button onclick="getValue()">Hidden</button>
+                      
+
+                      <script type="text/javascript">
+                        function getValue(){
+                            alert(document.getElementById('demo').value);
+                        }
+                      </script>
+                      
+                      <li><i>month</i></li>
+                      <input type="month" id="demo" />
+                      <br/>
+                      <button onclick="getValue">Get value</button>
+
+                      <script type="text/javascript">
+                        function getValue(){
+                            alert(document.getElementById('demo').value)
+                        }
+                      </script>
+
+
+                      <li><i>Number</i></li>
+                      <form action="for simple number">
+                       <input type="number" id="demo" />
+                       <input type="submit" />
+                     </form>
+                      <br />
+                      <button onclick="=getValue ()">ex-number id </button>
+              
+                      <script type="text/javascript">
+                          funtion getvalue() {
+                              alert(document.getElementById('demo') .value);
+                          }
+                          </script><br/>
+
+
+                      <li><i>password</i></li>
+                      <input type="password" id="demo" />
+                      <br/>
+                      <button onclick="getValue">Get value</button>
+
+                      <script type="text/javascript">
+                        function getValue(){
+                            alert(document.getElementById('demo').value)
+                        }
+                      </script>
+
+
+                      <li><i>radio</i></li>
+                       <input type="radio"  nome="gender" value="famale" value="famale" id="famale" />
+                       <label for="famale">Famale</label>
+                      <br />
+                      <input type="radio"  nome="gender" value="male" value="male" id="male" />
+                       <label for="male">male</label>
+                      <br />
+                      <button onclick="=getValue ()">Email </button>
+              
+                      <script type="text/javascript">
+                          funtion getvalue() {
+                            var radio = document.elementsByName('gender');
+                            var number_of_ = radio.length;
+
+                            for(var i= 0; i < number_of_radios; i++) {
+                                if(radios[i].checked) {
+                                    alert(radios[i].value);
+                                }
+                            }
+                          }
+                          </script><br/>
+
+
+                          <li><i>range</i></li>
+                          <input type="range" id="demo" />
+                          <br/>
+                          <button onclick="getValue">range</button>
+    
+                          <script type="text/javascript">
+                            function getValue(){
+                                alert(document.getElementById('demo').value)
+                            }
+                          </script>
+
+
+                          <li><i>search</i></li>
+                          <input type="search" id="demo" />
+                          <br/>
+                          <button onclick="getValue">search</button>
+    
+                          <script type="text/javascript">
+                            function getValue(){
+                                alert(document.getElementById('demo').value)
+                            }
+                          </script>
+
+
+                          <li><i>tel</i></li>
+                          <input type="tel" id="demo" />
+                          <br/>
+                          <button onclick="getValue">tel</button>
+    
+                          <script type="text/javascript">
+                            function getValue(){
+                                alert(document.getElementById('demo').value)
+                            }
+                          </script>
+
+
+                          <li><i>time</i></li>
+                          <input type="time" id="demo" />
+                          <br/>
+                          <button onclick="getValue">time</button>
+    
+                          <script type="text/javascript">
+                            function getValue(){
+                                alert(document.getElementById('demo').value)
+                            }
+                          </script>
+
+
+                          <li><i>week</i></li>
+                          <input type="week" id="demo" />
+                          <br/>
+                          <button onclick="getValue">week</button>
+    
+                          <script type="text/javascript">
+                            function getValue(){
+                                alert(document.getElementById('demo').value)
+                            }
+                          </script>
+
+
+                          <li><i>url</i></li>
+                          <form action="for simple number">
+                           <input type="url" id="demo" />
+                           <input type="submit" />
+                         </form>
+                          <br />
+                          <button onclick="=getValue ()">url</button>
+                  
+                          <script type="text/javascript">
+                              funtion getvalue() {
+                                  alert(document.getElementById('demo') .value);
+                              }
+                              </script><br/>
+
+
+             
+            
+
+</ui>
+</p>>
 
 
 
