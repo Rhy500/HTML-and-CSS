@@ -262,6 +262,174 @@ CSS</br>
                               }
                               </script><br/>
 
+                              <li><i>this massage is textarea index</i></li>
+                              <style type="text/css">
+                                textarea {
+                                    background-color: aquamarine;
+                                    color: black;
+                                    border:note;
+                                    outline:note;
+                                    resize: note;
+                                }
+                            </style>
+                                <textarea rows="10" ;cols="40" ;placeholder="type your massage here..." id="sample"></textarea>
+                                <br/>
+                          <button onclick="getValue">get value</button>
+    
+                          <script type="text/javascript">
+                            function getValue(){
+                                alert(document.getElementById('demo').value)
+                            }
+                          </script>
+<p>this dropdown list</p>
+<select id="sample">
+    <option value="Apples"> Apples </option>
+    <option value="Oranges"> Oranges </option>
+    <option value="Grapes"> Grapes </option>
+    <option value="Bananas"> Bananas </option>
+    <option value="Strawberries"> Strawberries </option>
+ </select>
+ <button onclick="getValue();"> Get Value </button>
+ <script type="text/javascript">
+    function getValue() {
+       var value = document.getElementById('sample').value;
+       alert(value);
+    }
+ </script>
+
+<select id="sample" multiple>
+    <option value="Apples"> Apples </option>
+    <option value="Oranges"> Oranges </option>
+    <option value="Grapes"> Grapes </option>
+    <option value="Bananas"> Bananas </option>
+    <option value="Strawberries"> Strawberries </option>
+ </select>
+ <button onclick="getValues();"> Get Values </button>
+ <script type="text/javascript">
+    function getValues() {
+       var options = document.getElementById('sample').options;
+       var options_count = document.getElementById('sample').options.length;
+       var value = [];
+ 
+       for(var i = 0; i < options_count; i++) {
+          if(options[i].selected) {
+             value.push(options[i].value);
+          }
+       }
+ 
+       alert(JSON.stringify(value));
+    }
+ </script>
+
+<label> 
+    The sentences value: 
+    <input type="text" autocapitalize="sentences" />
+</label>
+<br />
+<label> 
+    The words value: 
+    <input type="text" autocapitalize="words" />
+</label>
+<br />
+<label> 
+    The characters value: 
+    <input type="text" autocapitalize="characters" />
+</label>
+<br />
+<label> 
+    Turning autocapitalize off: 
+    <input type="text" autocapitalize="off" /> 
+</label>
+
+<label>
+    Turning autocomplete on:
+    <input type="text" autocomplete="on" />
+</label>
+<br />
+<label>
+    Turning autocomplete off:
+    <input type="text" autocomplete="off" />
+</label>
+
+<input type="text" autofocus />
+
+<input type="text" value="I am disabled." disabled />
+   <textarea disabled> I am disabled. </textarea>
+   <select disabled>
+       <option value="Option 1"> Option 1 </option>
+       <option value="Option 2"> Option 2 </option>
+   </select>
+
+   <form action="sample-page-handler.html">
+    <input type="date" max="1999-12-31" />
+    <input type="number" max="5" />
+    <input type="submit" />
+</form>
+
+<label>
+    The input below only allows a maximum of five characters. Try to type "loremipsum" (without space) then press the space button. 
+    <input type="text" maxlength="5" />
+</label>
+
+<form action="sample-page-handler.html">
+    <input type="date" min="2000-01-01" />
+    <input type="number" min="5" />
+    <input type="submit" />
+</form>
+
+<p> The user can now select multiple files (selecting multiple files in a single input may not be possible on some android devices). </p>
+   <input type="file" multiple />
+
+   <p> After submitting the form below the page handler can get the value of the input by referring to its name. </p>
+   <form action="sample-page-handler.html">
+       <input type="text" name="demo" />
+       <input type="submit" />
+   </form>
+
+   <p> Try to fill the text field with a non-alphanumeric value then submit the form. We can use the title attribute to describe the pattern specified. </p>
+   <form action="sample-page-handler.html">
+   	  <input type="text" pattern="[a-zA-Z0-9]+" title="Alphanumeric Values only." />
+   	  <input type="submit" />
+   </form>
+
+   <input type="text" placeholder="Hi! I am a placeholder." />
+
+   <input type="text" value="I can only be read and selected but not be modified." readonly />
+   <textarea readonly> I can only be read and selected but not be modified. </textarea>
+
+   <p> Try submitting the form below without filling up the text field. </p>
+   <form action="sample-page-handler.html">
+   	  <input type="text" required />
+   	  <input type="submit" />
+   </form>
+
+   <label>
+    The default behavior:
+    <textarea spellcheck="default"></textarea>
+</label>
+<br />
+<label>
+    Turning spellcheck on:
+    <textarea spellcheck="true"></textarea>
+</label>
+<br />
+<label>
+    Turning spellcheck off:
+    <textarea spellcheck="false"></textarea>
+</label>
+
+<label>
+    The hard value:
+    <!-- we need the cols attribute to take effect -->
+    <textarea cols="15" wrap="hard"></textarea>
+</label>
+<br />
+<label>
+    The soft value:
+    <textarea wrap="soft"></textarea>
+</label>
+
+
 
              
             
